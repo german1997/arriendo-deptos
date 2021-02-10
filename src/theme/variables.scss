@@ -12,7 +12,7 @@
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary: #00a591;
   --ion-color-secondary-rgb: 12, 209, 232;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -40,8 +40,8 @@
   --ion-color-warning-rgb: 255, 206, 0;
   --ion-color-warning-contrast: #ffffff;
   --ion-color-warning-contrast-rgb: 255, 255, 255;
-  --ion-color-warning-shade: #e0b500;
-  --ion-color-warning-tint: #ffd31a;
+  --ion-color-warning-shade: #ffce00;
+  --ion-color-warning-tint: #ffce00;
 
   /** danger **/
   --ion-color-danger: #f04141;
@@ -74,4 +74,47 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+   /** verde turismo real **/
+   --ion-color-turismo: linear-gradient(30deg,#00a591,#05534a);
+   --ion-color-turismo-rgb: 0,0,255;
+   --ion-color-turismo-contrast: #ffffff;
+   --ion-color-turismo-contrast-rgb: 255,255,255;
+   --ion-color-turismo-shade: #00a591;
+   --ion-color-turismo-tint: #00a591;
+
+
+
+   /** verde turismo real **/
+   --ion-color-turismo-claro: #00c8b0;
+   --ion-color-turismo-claro-rgb: 0,0,255;
+   --ion-color-turismo-claro-contrast: #ffffff;
+   --ion-color-turismo-claro-contrast-rgb: 255,255,255;
+   --ion-color-turismo-claro-shade: #00c8b0;
+   --ion-color-turismo-claro-tint: #00c8b0;
+
+ 
+
 }
+
+.ion-color-turismo{
+  --ion-color-base: var(--ion-color-turismo) !important;
+  --ion-color-base-rgb: var(--ion-color-turismo-rgb) !important;
+  --ion-color-contrast: var(--ion-color-turismo-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-turismo-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-turismo-shade) !important;
+  --ion-color-tint: var(--ion-color-turismo-tint) !important;
+}
+
+.ion-color-turismo-claro{
+  --ion-color-base: var(--ion-color-turismo-claro) !important;
+  --ion-color-base-rgb: var(--ion-color-turismo-claro-rgb) !important;
+  --ion-color-contrast: var(--ion-color-turismo-claro-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-turismo-claro-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-turismo-claro-shade) !important;
+  --ion-color-tint: var(--ion-color-turismo-claro-tint) !important;
+}
+
+
+
+

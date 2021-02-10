@@ -1,0 +1,31 @@
+
+<ion-header>
+    <ion-toolbar>
+      
+ 
+          <ion-title>DEPARTAMENTOS</ion-title>
+  
+    </ion-toolbar>
+  </ion-header>
+<ion-content >
+
+  <ion-list *ngFor="let d of departamentos">
+    <ion-item lines="none">
+      <ion-card mode="ios" color="light" >
+        <img src="/assets/depto.jpg" style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+        <ion-card-header>
+            <ion-text color="secondary" style="font-size: x-large;">
+              <ion-label color="warning">${{ d.valor }} por día</ion-label></ion-text>
+            
+              <ion-text color="secondary" style="font-size: medium;">
+              <ion-label color="dark"><ion-icon name="pin" style="color: #00a591;"></ion-icon>
+            {{ d.direccion }} - {{ d.comuna.nombre_comuna }} / {{ d.numero_dep }} </ion-label></ion-text>
+        </ion-card-header>
+        <ion-button expand="block" class="" style="font-size: large; height:35px; padding-left: 10px; padding-right: 10px;"
+        color="secondary" [routerLink]="['/detalledepartamento/',  d.id_depto ]" routerDirection="root">Ver Más</ion-button>
+      </ion-card>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,43 @@
+
+
+ 
+<ion-content color="turismo">
+  <br><br><br><br>
+  <div align="center">
+    <ion-img src="/assets/icon.png" style="width: 190px; height: 180px; margin-top: 20px; "></ion-img>
+  </div>
+  <br><br>
+
+  <ion-text>
+      <h1 style="text-align: center;"><b>INGRESAR</b></h1>
+    </ion-text>
+    
+    <ion-item style="padding-left: 50px; padding-right: 50px;">
+      <ion-icon name="mail" style="color: #00a591;"></ion-icon> &nbsp; &nbsp; &nbsp; &nbsp; 
+      <ion-input type="text" [(ngModel)]="txt_email" required placeholder="Email"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item style="padding-left: 50px; padding-right: 50px;"> 
+        <ion-icon name="lock" style="color: #00a591;"></ion-icon> &nbsp; &nbsp; &nbsp; &nbsp;
+      <ion-input type="password" [(ngModel)]="txt_contrasena" placeholder="Contraseña"
+      style="border-radius: 10px 10px 10px 10px;"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" class="" style="padding-left: 50px; padding-right: 50px;"
+    color="warning" (click)="IniciarSesion()">Aceptar</ion-button>
+    
+    
+    
+    <ion-button expand="block" class="ion-padding" style="padding-left: 50px; padding-right: 50px; color: #ffffff;" fill="outline" color="turismo" routerLink="/registro">Crea tu
+    cuenta</ion-button>
+
+  
+      
+      
+
+
+  
+
+
+</ion-content>
+

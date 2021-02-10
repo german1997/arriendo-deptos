@@ -1,0 +1,150 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons>
+      <ion-button slot="start" routerLink="/inicio/buscar">
+        <ion-icon ios="ios-arrow-back"></ion-icon>Atrás
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>DETALLE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content *ngFor="let depto of departamento">
+
+  <ion-slides [options]="sliderConfig" style="margin-top: 0px;">
+
+    <ion-slide>
+
+      <ion-card mode="ios" color="light" style="height: 250px;">
+        <img src="/assets/depto1.jpg" style="height: 250px;">
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <ion-card mode="ios" color="light" style="height: 250px;">
+        <img src="/assets/depto2.jpg" style="height: 250px;">
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <ion-card mode="ios" color="light" style="height: 250px;">
+        <img src="/assets/depto3.jpg" style="height: 250px;">
+      </ion-card>
+
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-list lines="none">
+
+    <ion-item>
+      <ion-label style="font-size: larger;">Departamento N°: {{ depto.numero_dep }}
+        <ion-icon color="success" style="font-size: 17px;" name="ios-checkmark-circle"></ion-icon>
+      </ion-label>
+    </ion-item>
+
+    <div style="margin-left: 20px;">
+
+      <ion-icon style="font-size: 17px;" color="warning" slot="start" name="star"></ion-icon>
+      <ion-icon style="font-size: 17px;" color="warning" slot="start" name="star"></ion-icon>
+      <ion-icon style="font-size: 17px;" color="warning" slot="start" name="star"></ion-icon>
+      <ion-icon style="font-size: 17px;" color="warning" slot="start" name="star"></ion-icon>
+      <ion-icon style="font-size: 17px;" color="warning" slot="start" name="star"></ion-icon>
+      <ion-label color="primary" style="font-size: medium;"> 5</ion-label>
+      <ion-label style="font-size: medium;"> / (120 comentarios)</ion-label>
+
+    </div>
+
+  </ion-list>
+
+
+      <ion-item>
+        <ion-label style="font-size: large; font-weight: bold;">Caracteristicas</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="md-man"></ion-icon> Max Personas: {{ depto.cant_personas }}
+        </ion-label>
+
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="car"></ion-icon> Estacionamiento:
+          {{ depto.estacionamiento? 'Si' : 'No' }}
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="bed"></ion-icon> Habitaciones: {{ depto.cant_habitaciones }}
+        </ion-label>
+
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" src="/assets/bano.svg"></ion-icon> Baños: {{ depto.cant_banos }}
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="restaurant"></ion-icon> Cocina: {{ depto.cocina? 'Si' : 'No' }}
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label style="font-size: large; font-weight: bold;">Comodidades</ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="wifi"></ion-icon> Internet: {{ depto.internet? 'Si' : 'No' }}
+        </ion-label>
+
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="thermometer"></ion-icon> Calefaccion:
+          {{ depto.calefaccion? 'Si' : 'No' }}
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" name="md-desktop"></ion-icon> Tv Cable:
+          {{ depto.tv_cable? 'Si' : 'No' }}
+        </ion-label>
+
+        <ion-label style="font-size: medium;">
+          <ion-icon color="medium" slot="start" src="/assets/bano.svg"></ion-icon> Accesible:
+          {{ depto.accesible? 'Si' : 'No' }}
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label style="font-weight: bold;">Ubicación</ion-label>
+      </ion-item>
+
+
+  
+</ion-content>
+
+<div #mapElement class="map"></div>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="secondary" style="font-size: large;" expand="full" [routerLink]="['/realizarreserva/',  id_depto ]">
+      Reservar
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+

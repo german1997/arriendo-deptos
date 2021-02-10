@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-toolbar>
+      
+          <ion-title>MI PERFIL</ion-title>
+  
+    </ion-toolbar>
+  </ion-header>
+
+<style>
+  .centrar-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  ion-avatar {
+    width: 130px;
+    height: 130px;
+  }
+</style>
+
+
+
+<ion-content >
+
+  <ion-list lines="none">
+
+    <ion-item color="turi">
+      <ion-avatar class="centrar-avatar">
+        <img src="/assets/user.png" />
+      </ion-avatar>
+    </ion-item>
+
+
+    <ion-item class="ion-text-center" style="margin-top: 10px;"> 
+      <ion-label>
+        <ion-icon style="font-size: 26px; margin-bottom: -3px;" name="md-list-box"></ion-icon>
+        <ion-text style="font-size: 26px;"><b>Mis Datos</b></ion-text>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;">Rut</ion-label>
+      <ion-label>{{ txtRut }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Primer Nombre</ion-label>
+      <ion-label>{{ txtPrimerNombre }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Segundo Nombre</ion-label>
+      <ion-label>{{ txtSegundoNombre }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Apellido Paterno</ion-label>
+      <ion-label>{{ txtApellidoPaterno }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Apellido Materno</ion-label>
+      <ion-label>{{ txtApellidoMaterno }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;"> Fecha Nacimiento</ion-label>
+      <ion-label>{{ txtFechaNacimiento }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Telefono</ion-label>
+      <ion-label>{{ txtTelefono }} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;">Dirección</ion-label>
+      <ion-label>{{ txtDireccion }} </ion-label>
+    </ion-item>
+ 
+    <ion-item style="text-align: center; padding-left: 35px;">
+
+  <ion-button expand="block" class="" style="font-size: large; height:35px; width: 300px; padding-left: 10px; padding-right: 10px;"
+  color="secondary" routerLink="/editarperfil" routerDirection="root">
+  <ion-icon color="turismo" slot="start" name="md-create"></ion-icon>Editar</ion-button>
+
+</ion-item>
+</ion-list>
+
+</ion-content>

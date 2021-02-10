@@ -1,0 +1,81 @@
+
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio/miperfil">
+        <ion-icon slot="start" ios="ios-arrow-back"></ion-icon>Atrás
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="ModificarDatos()">Listo</ion-button>
+    </ion-buttons>
+
+    <ion-title>EDITAR PERFIL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<style>
+  .centrar-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  ion-avatar {
+    width: 130px;
+    height: 130px;
+  }
+</style>
+
+
+
+<ion-content>
+
+  <ion-list lines="none">
+
+    <ion-item>
+      <ion-avatar class="centrar-avatar">
+        <img src="/assets/user.png" />
+      </ion-avatar>
+    </ion-item>
+
+    <ion-item class="ion-text-center">
+      <ion-label color="primary">Cambiar Foto</ion-label>
+    </ion-item>
+<br>
+
+    <ion-item>
+      <ion-label style="padding-left: 35px;">Primer Nombre</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtPrimerNombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="padding-left: 25px;">Segundo Nombre</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtSegundoNombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="padding-left: 28px;">Apellido Paterno</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtApellidoPaterno"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="padding-left: 27px;">Apellido Materno</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtApellidoMaterno"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="padding-left: 56px;">Telefono</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtTelefono"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="padding-left: 53px;">Dirección</ion-label>
+      <ion-input type="text" slot="end" [(ngModel)]="txtDireccion"></ion-input>
+    </ion-item>
+
+  </ion-list>

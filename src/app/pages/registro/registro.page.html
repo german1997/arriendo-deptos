@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    
+      <ion-buttons slot="start">
+          <ion-back-button text="Atrás" defaultHref="/"></ion-back-button>
+        </ion-buttons> 
+        <ion-title>REGISTRO</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-list class="ion-padding">
+
+    <ion-item style="padding-left: 30px; padding-right: 30px;">
+        <ion-input type="text" [(ngModel)]="txt_rut" reqired placeholder="    Rut"></ion-input>
+      </ion-item>
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+          <ion-input type="text" [(ngModel)]="txt_primer_nombre" required placeholder="    Primer Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+        <ion-input type="text" [(ngModel)]="txt_segundo_nombre" required placeholder="    Segundo Nombre"></ion-input>
+  </ion-item>
+
+  <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+      <ion-input type="text" [(ngModel)]="txt_paterno" required placeholder="    Apellido Paterno"></ion-input>
+  </ion-item>
+
+  <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+      <ion-input type="text" [(ngModel)]="txt_materno" required placeholder="    Apellido Materno"></ion-input>
+  </ion-item>
+
+
+  <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="txt_fecha" placeholder="Fecha Nacimiento"></ion-datetime>
+    </ion-item>
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+        <ion-input type="number" [(ngModel)]="txt_fono" required placeholder="    Telefono"></ion-input>
+    </ion-item>
+
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+        <ion-input type="text" [(ngModel)]="txt_direccion" required placeholder="    Dirección"></ion-input>
+    </ion-item>
+
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+        <ion-input type="text" [(ngModel)]="txt_email" required placeholder="    Email"></ion-input>
+    </ion-item>
+
+    <ion-item style="padding-left: 30px; padding-right: 30px; padding-top: 20px;">
+        <ion-input type="text" [(ngModel)]="txt_contrasena" required placeholder="    Contraseña"></ion-input>
+    </ion-item>
+
+
+    <ion-button expand="block" class="ion-padding" color="turismo" (click)="RegistrarUsuario()">Aceptar</ion-button>
+
+  </ion-list>
+
+
+
+</ion-content>
+
