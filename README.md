@@ -1,3 +1,3 @@
 # arriendo-deptos
 
-Aplicación movil realizada en ionic 5 , angular 8+.
+Aplicación móvil realizada en ionic 5 , angular 8+.
